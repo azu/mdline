@@ -18,9 +18,9 @@ See [Releases page](https://github.com/azu/mdline/releases).
 
 ## Running tests
 
-Install devDependencies and Run `npm test`:
-
-    npm test
+    yarn install
+    yarn bootrap
+    yarn test
 
 ## Contributing
 
