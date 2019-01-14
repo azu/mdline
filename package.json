@@ -1,0 +1,57 @@
+{
+  "name": "mdline",
+  "version": "1.0.0",
+  "description": "Markdown timeline format and toolkit.",
+  "keywords": [
+    "format",
+    "html",
+    "markdown",
+    "timeline"
+  ],
+  "homepage": "https://github.com/azu/mdline",
+  "bugs": {
+    "url": "https://github.com/azu/mdline/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/azu/mdline.git"
+  },
+  "license": "MIT",
+  "author": "azu",
+  "files": [
+    "bin/",
+    "lib/",
+    "src/"
+  ],
+  "main": "lib/mdline.js",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
+  },
+  "devDependencies": {
+    "husky": "^1.3.1",
+    "lerna": "^3.10.5",
+    "lint-staged": "^8.1.0",
+    "prettier": "^1.15.3"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "printWidth": 120,
+    "tabWidth": 4
+  },
+  "husky": {
+    "hooks": {
+      "precommit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
