@@ -39,6 +39,9 @@
     "singleQuote": false,
     "tabWidth": 4
   },
+  "dependencies": {
+    "svelte": "^2.16.0"
+  },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.18",

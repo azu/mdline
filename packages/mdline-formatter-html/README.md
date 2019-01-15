@@ -42,3 +42,7 @@ For bugs and feature requests, [please create an issue](https://github.com/azu/m
 ## License
 
 MIT © azu
+
+## Acknowleges
+
+- [CodyHouse/vertical-timeline: Responsive timeline](https://github.com/CodyHouse/vertical-timeline "CodyHouse/vertical-timeline: Responsive timeline")
