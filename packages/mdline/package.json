@@ -1,11 +1,12 @@
 {
-  "name": "@mdline/mdline-formatter-html",
+  "name": "mdline",
   "version": "1.0.0",
-  "description": "HTML formatter for mdline",
+  "description": "markdown to timeline tool.",
   "keywords": [
+    "cli",
     "mdline"
   ],
-  "homepage": "https://github.com/azu/mdline/tree/master/packages/mdline-formatter-html/",
+  "homepage": "https://github.com/azu/mdline/tree/master/packages/mdline/",
   "bugs": {
     "url": "https://github.com/azu/mdline/issues"
   },
@@ -20,8 +21,8 @@
     "lib/",
     "src/"
   ],
-  "main": "lib/mdline-formatter-html.js",
-  "types": "lib/mdline-formatter-html.d.ts",
+  "main": "lib/mdline.js",
+  "types": "lib/mdline.d.ts",
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -40,10 +41,15 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "svelte": "^2.16.0",
-    "@mdline/types": "^1.0.0"
+    "@babel/generator": "^7.2.2",
+    "@babel/parser": "^7.2.3",
+    "@mdline/mdline-formatter-html": "^1.0.0",
+    "@mdline/mdline-parser": "^1.0.0",
+    "meow": "^5.0.0"
   },
   "devDependencies": {
+    "@types/babel__generator": "^7.0.1",
+    "@types/meow": "^5.0.0",
     "@types/mocha": "^5.2.5",
     "@types/node": "^10.12.18",
     "cross-env": "^5.2.0",
@@ -53,8 +59,5 @@
     "ts-node": "^7.0.1",
     "ts-node-test-register": "^4.0.0",
     "typescript": "^3.2.2"
-  },
-  "publishConfig": {
-    "access": "public"
   }
 }
