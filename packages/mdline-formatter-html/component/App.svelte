@@ -7,11 +7,10 @@
         {#each items as item}
         <div class="cd-timeline__block js-cd-block">
             <div class="cd-timeline__img cd-timeline__img--movie js-cd-img">
-                <img src="img/cd-icon-movie.svg" alt="Movie">
             </div>
             <div class="cd-timeline__content js-cd-content">
                 <h2>{item.title}</h2>
-                <p>{item.body}</p>
+                {@html item.bodyHTML}
                 <span class="cd-timeline__date">{item.startDate}</span>
             </div>
         </div>
@@ -148,16 +147,8 @@
         margin-top: -12px;
     }
 
-    .cd-timeline__img.cd-timeline__img--picture {
+    .cd-timeline__img {
         background: #75ce66;
-    }
-
-    .cd-timeline__img.cd-timeline__img--movie {
-        background: #c03b44;
-    }
-
-    .cd-timeline__img.cd-timeline__img--location {
-        background: #f0ca45;
     }
 
     @media only screen and (min-width: 1170px) {

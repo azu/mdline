@@ -1,37 +1,13 @@
-export type mdlineItem = {
-    startDate: Date;
-    endDate?: Date;
-    title: string;
-    body: string; // markdown
-    icon: string; // icon image path
-}
-export type mdlineList = mdlineItem[];
+import { MdlineFormat } from "@mdline/types";
 
 require("svelte/ssr/register")({
     extensions: [".svelte"]
 });
 
-export const format = (/* _mdlineList: mdlineList */) => {
+export const format = async (mdlineData: MdlineFormat): Promise<string> => {
     const App = require("../component/App.svelte");
-    const items = [
-        {
-            startDate: "2011-01-16",
-            title: "JSer.info 公開",
-            body: "JSer.infoを公開して運用を開始した。"
-        },
-        {
-            startDate: "2012-01-16",
-            title: "JSer.info 1周年",
-            body: "JSer.info公開してから1年が経った"
-        },
-        {
-            startDate: "2013-01-16",
-            title: "JSer.info 2周年",
-            body: "JSer.infoを公開してから2年が経った"
-        }
-    ];
     const { html, css, head } = App.render({
-        items
+        items: mdlineData.items
     });
     return `<!doctype html>
 <html lang="en">
@@ -47,5 +23,3 @@ export const format = (/* _mdlineList: mdlineList */) => {
 </body>
 </html>`;
 };
-
-format();

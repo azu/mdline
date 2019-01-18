@@ -1,11 +1,13 @@
 {
-  "name": "@mdline/mdline-formatter-html",
+  "name": "@mdline/types",
   "version": "1.0.0",
-  "description": "HTML formatter for mdline",
+  "description": "types pacakges for mdline",
   "keywords": [
-    "mdline"
+    "mdline",
+    "types",
+    "typescript"
   ],
-  "homepage": "https://github.com/azu/mdline/tree/master/packages/mdline-formatter-html/",
+  "homepage": "https://github.com/azu/mdline/tree/master/packages/types/",
   "bugs": {
     "url": "https://github.com/azu/mdline/issues"
   },
@@ -20,8 +22,8 @@
     "lib/",
     "src/"
   ],
-  "main": "lib/mdline-formatter-html.js",
-  "types": "lib/mdline-formatter-html.d.ts",
+  "main": "lib/types.js",
+  "types": "lib/types.d.ts",
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -38,10 +40,6 @@
     "printWidth": 120,
     "singleQuote": false,
     "tabWidth": 4
-  },
-  "dependencies": {
-    "svelte": "^2.16.0",
-    "@mdline/types": "^1.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",

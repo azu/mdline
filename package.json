@@ -1,6 +1,6 @@
 {
   "private": true,
-  "name": "mdline",
+  "name": "root",
   "version": "1.0.0",
   "description": "Markdown timeline format and toolkit.",
   "keywords": [
@@ -33,8 +33,14 @@
     "test": "test"
   },
   "scripts": {
-    "bootstrap": "larna bootrap",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "lerna bootstrap",
+    "build": "lerna run build",
+    "test": "lerna run test",
+    "versionup": "lerna version --conventional-commits",
+    "versionup:patch": "lerna version patch --conventional-commits",
+    "versionup:minor": "lerna version minor --conventional-commits",
+    "versionup:major": "lerna version minor --conventional-commits",
+    "realse": "lerna publish from-package",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
   },
   "devDependencies": {
