@@ -1,16 +1,18 @@
 # @mdline/types
 
-types pacakges for mdline
+Types definitions for mdline.
+
+This package defines following types.
+
+- `MdlineFormat`
+- `MdlineParser` - [mdline-parser](../mdline-parser)
+- `MdlineFormatter` - [mdline-formatter-html](../mdline-formatter-html)
 
 ## Install
 
 Install with [npm](https://www.npmjs.com/):
 
     npm install @mdline/types
-
-## Usage
-
-- [ ] Write usage instructions
 
 ## Changelog
 

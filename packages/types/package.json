@@ -1,7 +1,7 @@
 {
   "name": "@mdline/types",
   "version": "1.0.2",
-  "description": "types pacakges for mdline",
+  "description": "Types definitions for mdline.",
   "keywords": [
     "mdline",
     "types",
