@@ -6,7 +6,6 @@ import * as parser from "@mdline/mdline-parser";
 import * as formatter from "@mdline/mdline-formatter-html";
 
 export async function run(argv: string[]) {
-    console.log(argv);
     const cli = meow(`
     Usage
       $ mdline <input> [Options]
