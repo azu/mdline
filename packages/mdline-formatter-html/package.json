@@ -18,7 +18,8 @@
   "files": [
     "bin/",
     "lib/",
-    "src/"
+    "src/",
+    "component/"
   ],
   "main": "lib/mdline-formatter-html.js",
   "types": "lib/mdline-formatter-html.d.ts",
