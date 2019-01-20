@@ -6,7 +6,7 @@ For example, mdline convert [a markdown file](packages/mdline-parser/test/snapsh
 
 [![ecmascript-timeline.png](./docs/resources/ecmascript-timeline.png)](https://mdline.netlify.com/)
 
-> -- [ECMAScript - Wikipedia](https://en.wikipedia.org/wiki/ECMAScript)
+> [ECMAScript - Wikipedia](https://en.wikipedia.org/wiki/ECMAScript)
 
 ## Install
 
