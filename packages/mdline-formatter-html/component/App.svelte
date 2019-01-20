@@ -7,8 +7,8 @@
             <div class="cd-timeline__content js-cd-content">
                 <h2>{item.title}</h2>
                 {@html item.bodyHTML}
-                {#if endDate }
-                    <span class="cd-timeline__date">{item.beginDate} - item.endDate</span>
+                {#if item.endDate }
+                    <span class="cd-timeline__date">{item.beginDate} - {item.endDate}</span>
                 {:else}
                     <span class="cd-timeline__date">{item.beginDate}</span>
                 {/if}
