@@ -62,6 +62,8 @@ For more details, see [mdline package](./packages/mdline).
 
 ## Packages
 
+This repository is a monorepo includes following packages.
+
 - [types](./packages/types) - Type definitions for mdline
 - [mdline](./packages/mdline) - CLI, Core
 - [mdline-parser](./packages/mdline-parser) - Parser for mdline format
