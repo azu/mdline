@@ -6,6 +6,7 @@ For example, mdline convert [a markdown file](packages/mdline-parser/test/snapsh
 
 [![ecmascript-timeline.png](./docs/resources/ecmascript-timeline.png)](https://mdline.netlify.com/)
 
+> mdline timeline: <https://mdline.netlify.com/>  
 > [ECMAScript - Wikipedia](https://en.wikipedia.org/wiki/ECMAScript)
 
 ## Install
@@ -38,7 +39,9 @@ What is happened?
 OK
 ```
 
-For more details, see [ECMAScript timeline example](packages/mdline-parser/test/snapshots/ecmascript/input.md)
+For more details, see [ECMAScript timeline markdown](packages/mdline/test/snapshots/example/input.md) and [HTML](packages/mdline/test/snapshots/example/output.html).
+
+You can also live demo on <https://mdline.netlify.com/>.
 
 ## Usage
 
