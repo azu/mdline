@@ -9,11 +9,6 @@ For example, mdline convert [a markdown file](packages/mdline-parser/test/snapsh
 > mdline timeline: <https://mdline.netlify.com/>  
 > [ECMAScript - Wikipedia](https://en.wikipedia.org/wiki/ECMAScript)
 
-## Install
-
-Install with [npm](https://www.npmjs.com/):
-
-    npm install mdline
 
 ## Mdline Format
 
@@ -53,8 +48,14 @@ You can also live demo on <https://mdline.netlify.com/>.
 
 ## Usage
 
+Install with [npm](https://www.npmjs.com/):
+
+    npm install mdline -g
+
 Convert mdline format text to html.
 
+    mdline ./timeline.md -o timeline.html
+    # or
     npx mdline ./timeline.md -o timeline.html
 
 For more details, see [mdline package](./packages/mdline).
