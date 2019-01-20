@@ -70,6 +70,13 @@ See [Releases page](https://github.com/azu/mdline/releases).
     yarn bootrap
     yarn test
 
+## Release workflow
+
+    # = npm version
+    yarn run versionup
+    # = npm publish
+    yarn run release
+
 ## Contributing
 
 Pull requests and stars are always welcome.
