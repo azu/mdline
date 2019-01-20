@@ -41,7 +41,7 @@
     "versionup:patch": "lerna version patch --conventional-commits",
     "versionup:minor": "lerna version minor --conventional-commits",
     "versionup:major": "lerna version minor --conventional-commits",
-    "realse": "lerna publish from-package",
+    "release": "lerna publish from-package",
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
     "netlify": "node public/update-index.js"
   },
