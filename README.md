@@ -1,6 +1,12 @@
-# mdline
+# mdline [![Build Status](https://travis-ci.org/textlint/textlint.svg?branch=master)](https://travis-ci.org/textlint/textlint)
 
 Markdown timeline format and toolkit.
+
+For example, mdline convert [a markdown file](packages/mdline-parser/test/snapshots/ecmascript/input.md) to following HTML file.
+
+[![ecmascript-timeline.png](./docs/resources/ecmascript-timeline.png)](https://mdline.netlify.com/)
+
+> -- [ECMAScript - Wikipedia](https://en.wikipedia.org/wiki/ECMAScript)
 
 ## Install
 
@@ -36,7 +42,7 @@ For more details, see [ECMAScript timeline example](packages/mdline-parser/test/
 
 ## Usage
 
-Convert mdline format text to html
+Convert mdline format text to html.
 
     npx mdline ./timeline.md -o timeline.html
 
