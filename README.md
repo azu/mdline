@@ -60,6 +60,13 @@ Convert mdline format text to html.
 
 For more details, see [mdline package](./packages/mdline).
 
+## Packages
+
+- [types](./packages/types) - Type definitions for mdline
+- [mdline](./packages/mdline) - CLI, Core
+- [mdline-parser](./packages/mdline-parser) - Parser for mdline format
+- [mdline-formatter-html](./packages/mdline-formatter-html) - Formatter for mdline format
+
 ## Changelog
 
 See [Releases page](https://github.com/azu/mdline/releases).
