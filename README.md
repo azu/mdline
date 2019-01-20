@@ -18,11 +18,11 @@ Install with [npm](https://www.npmjs.com/):
 ## Mdline Format
 
 ```
-## \d{4}-\d{2}-\d{2}: TITLE
+## {{Date}}: TITLE
 
 MARKDOWN BODY
 
-## \d{4}-\d{2}-\d{2}--\d{4}-\d{2}-\d{2}: TITLE
+## {{Date}}--{{Date}}: TITLE
 
 MARKDOWN BODY
 ```
@@ -30,13 +30,21 @@ MARKDOWN BODY
 **Example:**
 
 ```
-## 2011-01-16--2011-01-20: Date Ranges
+## 1997-06: ECMAScript 1
 
-What is happened?
+First edition.
 
-## 2012-01-24: OK
+## 1998-06: ECMAScript 2
 
-OK
+Editorial changes to keep the specification fully aligned with ISO/IEC 16262 international standard.
+
+## 1999-12: ECMAScript 3
+
+Added regular expressions, better string handling, new control statements, try/catch exception handling, tighter definition of errors, formatting for numeric output and other enhancements.
+
+## 2000-01--2007-10-23: [Abandoned] ECMAScript 4
+
+Fourth Edition was abandoned, due to political differences concerning language complexity. Many features proposed for the Fourth Edition have been completely dropped; some were incorporated into the sixth edition.
 ```
 
 For more details, see [ECMAScript timeline markdown](packages/mdline/test/snapshots/example/input.md) and [HTML](packages/mdline/test/snapshots/example/output.html).

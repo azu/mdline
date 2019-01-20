@@ -63,5 +63,6 @@
     "ts-node": "^7.0.1",
     "ts-node-test-register": "^4.0.0",
     "typescript": "^3.2.2"
-  }
+  },
+  "gitHead": "a2524a6ac6b42f6fcd7ef5a91ef6d2c31a369f36"
 }
