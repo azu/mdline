@@ -1,9 +1,10 @@
-import * as fs from "fs";
-import { parse } from "@mdline/mdline-parser";
-import { format } from "@mdline/mdline-formatter-html";
+import { MdlineParser, MdlineFormatter } from "@mdline/types";
 
-export async function processFile(filePath: string) {
-    const text = fs.readFileSync(filePath, "utf-8");
-    const parseResults = parse(text);
-    return format(parseResults);
+export async function processText(input: string, options: {
+    parser: MdlineParser;
+    formatter: MdlineFormatter
+}): Promise<string> {
+    const { parser, formatter } = options;
+    const parseResults = parser.parse(input);
+    return formatter.format(parseResults);
 }

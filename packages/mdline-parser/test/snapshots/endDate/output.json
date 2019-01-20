@@ -1,0 +1,17 @@
+{
+    "items": [
+        {
+            "title": "Range Dates",
+            "beginDate": "2011-01-16",
+            "endDate": "2011-01-20",
+            "bodyMarkdown": "Start Range Date",
+            "bodyHTML": "<p>Start Range Date</p>\n"
+        },
+        {
+            "title": "OK",
+            "beginDate": "2012-01-24",
+            "bodyMarkdown": "OK",
+            "bodyHTML": "<p>OK</p>\n"
+        }
+    ]
+}

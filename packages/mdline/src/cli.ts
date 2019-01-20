@@ -1,7 +1,9 @@
 import meow from "meow";
 import * as fs from "fs";
 import * as path from "path";
-import { processFile } from "./mdline";
+import { processText } from "./mdline";
+import * as parser from "@mdline/mdline-parser";
+import * as formatter from "@mdline/mdline-formatter-html";
 
 export async function run(argv: string[]) {
     console.log(argv);
@@ -10,17 +12,12 @@ export async function run(argv: string[]) {
       $ mdline <input> [Options]
  
     Options
-      --format, -f  Format name(Default: html)
       --output, -o  Output path
  
     Examples
       $ mdline ./timeline.md -o timeline.html
 `, {
         flags: {
-            format: {
-                type: "string",
-                alias: "f"
-            },
             output: {
                 type: "string",
                 alias: "o"
@@ -30,13 +27,19 @@ export async function run(argv: string[]) {
         autoHelp: true,
         autoVersion: true
     });
-    console.log("cli.input[0]", cli.input[0]);
-    if (!cli.input[0]) {
+    const inputFilePath = cli.input[0];
+    if (!inputFilePath) {
         cli.showHelp();
     }
-    const output = await processFile(cli.input[0]);
+    const inputText = fs.readFileSync(inputFilePath, "utf-8");
+    // TODO: parser and formatter will be plugabble
+    const output = await processText(inputText, {
+        parser,
+        formatter
+    });
     if (cli.flags.output) {
-        fs.writeFileSync(path.resolve(process.cwd(), cli.flags.output), output, "utf-8");
+        const outputAbsolutePath = path.resolve(process.cwd(), cli.flags.output);
+        fs.writeFileSync(outputAbsolutePath, output, "utf-8");
     } else {
         console.log(output);
     }

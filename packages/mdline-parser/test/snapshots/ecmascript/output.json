@@ -1,0 +1,65 @@
+{
+    "items": [
+        {
+            "title": "ECMAScript 1",
+            "beginDate": "1997-06",
+            "bodyMarkdown": "First edition.",
+            "bodyHTML": "<p>First edition.</p>\n"
+        },
+        {
+            "title": "ECMAScript 2",
+            "beginDate": "1998-06",
+            "bodyMarkdown": "Editorial changes to keep the specification fully aligned with ISO/IEC 16262 international standard.",
+            "bodyHTML": "<p>Editorial changes to keep the specification fully aligned with ISO/IEC 16262 international standard.</p>\n"
+        },
+        {
+            "title": "ECMAScript 3",
+            "beginDate": "1999-12",
+            "bodyMarkdown": "Added regular expressions, better string handling, new control statements, try/catch exception handling, tighter definition of errors, formatting for numeric output and other enhancements.",
+            "bodyHTML": "<p>Added regular expressions, better string handling, new control statements, try/catch exception handling, tighter definition of errors, formatting for numeric output and other enhancements.</p>\n"
+        },
+        {
+            "title": "Abandoned ECMAScript 4",
+            "beginDate": "2000-01",
+            "endDate": "2007-10-23",
+            "bodyMarkdown": "Fourth Edition was abandoned, due to political differences concerning language complexity. Many features proposed for the Fourth Edition have been completely dropped; some were incorporated into the sixth edition.",
+            "bodyHTML": "<p>Fourth Edition was abandoned, due to political differences concerning language complexity. Many features proposed for the Fourth Edition have been completely dropped; some were incorporated into the sixth edition.</p>\n"
+        },
+        {
+            "title": "ECMAScript 5",
+            "beginDate": "2009-12",
+            "bodyMarkdown": "Adds \"strict mode,\" a subset intended to provide more thorough error checking and avoid error-prone constructs.\nClarifies many ambiguities in the 3rd edition specification, and accommodates behaviour of real-world implementations that differed consistently from that specification. Adds some new features, such as getters and setters, library support for JSON, and more complete reflection on object properties.",
+            "bodyHTML": "<p>Adds \"strict mode,\" a subset intended to provide more thorough error checking and avoid error-prone constructs.\nClarifies many ambiguities in the 3rd edition specification, and accommodates behaviour of real-world implementations that differed consistently from that specification. Adds some new features, such as getters and setters, library support for JSON, and more complete reflection on object properties.</p>\n"
+        },
+        {
+            "title": "ECMAScript 5.1",
+            "beginDate": "2011-06",
+            "bodyMarkdown": "This edition 5.1 of the ECMAScript standard is fully aligned with third edition of the international standard ISO/IEC 16262:2011.",
+            "bodyHTML": "<p>This edition 5.1 of the ECMAScript standard is fully aligned with third edition of the international standard ISO/IEC 16262:2011.</p>\n"
+        },
+        {
+            "title": "ECMAScript 2015",
+            "beginDate": "2015-06",
+            "bodyMarkdown": "The sixth edition, initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015 (ES2015) adds significant new syntax for writing complex applications, including classes and modules, but defines them semantically in the same terms as ECMAScript 5 strict mode. Other new features include iterators and for/of loops, Python-style generators and generator expressions, arrow functions, binary data, typed arrays, collections (maps, sets and weak maps), promises, number and math enhancements, reflection, and proxies (metaprogramming for virtual objects and wrappers). As the first \"ECMAScript Harmony\" specification, it is also known as \"ES6 Harmony.\"",
+            "bodyHTML": "<p>The sixth edition, initially known as ECMAScript 6 (ES6) and later renamed to ECMAScript 2015 (ES2015) adds significant new syntax for writing complex applications, including classes and modules, but defines them semantically in the same terms as ECMAScript 5 strict mode. Other new features include iterators and for/of loops, Python-style generators and generator expressions, arrow functions, binary data, typed arrays, collections (maps, sets and weak maps), promises, number and math enhancements, reflection, and proxies (metaprogramming for virtual objects and wrappers). As the first \"ECMAScript Harmony\" specification, it is also known as \"ES6 Harmony.\"</p>\n"
+        },
+        {
+            "title": "ECMAScript 2016",
+            "beginDate": "2016-06",
+            "bodyMarkdown": "the seventh edition, intended to continue the themes of language reform, code isolation, control of effects and library/tool enabling from ES2015, includes two new features: the exponentiation operator (**) and Array.prototype.includes.",
+            "bodyHTML": "<p>the seventh edition, intended to continue the themes of language reform, code isolation, control of effects and library/tool enabling from ES2015, includes two new features: the exponentiation operator (**) and Array.prototype.includes.</p>\n"
+        },
+        {
+            "title": "ECMAScript 2017",
+            "beginDate": "2017-06",
+            "bodyMarkdown": "the eighth edition, includes features for concurrency and atomics, syntactic integration with promises (async/await).",
+            "bodyHTML": "<p>the eighth edition, includes features for concurrency and atomics, syntactic integration with promises (async/await).</p>\n"
+        },
+        {
+            "title": "ECMAScript 2018",
+            "beginDate": "2015-06",
+            "bodyMarkdown": "ECMAScript 2018 (ES2018), the ninth edition, includes features for asynchronous iteration and generators, new regular expression features and rest/spread parameters.",
+            "bodyHTML": "<p>ECMAScript 2018 (ES2018), the ninth edition, includes features for asynchronous iteration and generators, new regular expression features and rest/spread parameters.</p>\n"
+        }
+    ]
+}

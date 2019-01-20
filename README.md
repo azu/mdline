@@ -8,9 +8,39 @@ Install with [npm](https://www.npmjs.com/):
 
     npm install mdline
 
+## Mdline Format
+
+```
+## \d{4}-\d{2}-\d{2}: TITLE
+
+MARKDOWN BODY
+
+## \d{4}-\d{2}-\d{2}--\d{4}-\d{2}-\d{2}: TITLE
+
+MARKDOWN BODY
+```
+
+**Example:**
+
+```
+## 2011-01-16--2011-01-20: Date Ranges
+
+What is happened?
+
+## 2012-01-24: OK
+
+OK
+```
+
+For more details, see [ECMAScript timeline example](packages/mdline-parser/test/snapshots/ecmascript/input.md)
+
 ## Usage
 
-- [ ] Write usage instructions
+Convert mdline format text to html
+
+    npx mdline ./timeline.md -o timeline.html
+
+For more details, see [mdline package](./packages/mdline).
 
 ## Changelog
 

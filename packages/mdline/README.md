@@ -8,9 +8,31 @@ Install with [npm](https://www.npmjs.com/):
 
     npm install mdline
 
-## Usage
+## Usage: CLI
 
-- [ ] Write usage instructions
+    Usage
+      $ mdline <input> [Options]
+ 
+    Options
+      --output, -o  Output path
+ 
+    Examples
+      $ mdline ./timeline.md -o timeline.html
+
+## Usage: Module
+
+```js
+import { processText } from "mdline";
+import * as parser from "@mdline/mdline-parser";
+import * as formatter from "@mdline/mdline-formatter-html";
+processText("...", {
+    parser,
+    formatter
+})
+.then(result => {
+    console.log(result);    
+});
+```
 
 ## Changelog
 

@@ -1,0 +1,94 @@
+{
+    "items": [
+        {
+            "title": "JSer.info 公開",
+            "beginDate": "2011-01-16",
+            "bodyMarkdown": "JSer.infoを公開して運用を開始した。",
+            "bodyHTML": "<p>JSer.infoを公開して運用を開始した。</p>\n"
+        },
+        {
+            "title": "JSer.info 1周年",
+            "beginDate": "2012-01-16",
+            "bodyMarkdown": "JSer.infoを公開してから1年が経ったのを記念して[オフラインJavaScript勉強会](https://atnd.org/events/23551)で発表をした。\n\n詳細は[オフライン勉強会でJSer.info一周年について発表してきた - JSer.info](https://jser.info/post/15883533195)を参照。",
+            "bodyHTML": "<p>JSer.infoを公開してから1年が経ったのを記念して<a href=\"https://atnd.org/events/23551\">オフラインJavaScript勉強会</a>で発表をした。</p>\n<p>詳細は<a href=\"https://jser.info/post/15883533195\">オフライン勉強会でJSer.info一周年について発表してきた - JSer.info</a>を参照。</p>\n"
+        },
+        {
+            "title": "JSer.info 100回",
+            "beginDate": "2012-12-10",
+            "bodyMarkdown": "100回目の投稿。\n\n- [2012-12-10のJS: Firebug 1.11.0、Heap Profilerでのメモリリーク調査、CSS testing tools - JSer.info](https://jser.info/post/37638024456)",
+            "bodyHTML": "<p>100回目の投稿。</p>\n<ul>\n<li><a href=\"https://jser.info/post/37638024456\">2012-12-10のJS: Firebug 1.11.0、Heap Profilerでのメモリリーク調査、CSS testing tools - JSer.info</a></li>\n</ul>\n"
+        },
+        {
+            "title": "JSer.info 2周年",
+            "beginDate": "2013-01-21",
+            "bodyMarkdown": "2周年を迎えた。\n\n公開時にとりあえず2年はやってみることにしていていてそれを達成した。\n\n- [2013-01-21のJS: jQuery 1.9、Testing jQuery Plugins、JavaScript testing boilerplate - JSer.info](https://jser.info/post/41104670903)",
+            "bodyHTML": "<p>2周年を迎えた。</p>\n<p>公開時にとりあえず2年はやってみることにしていていてそれを達成した。</p>\n<ul>\n<li><a href=\"https://jser.info/post/41104670903\">2013-01-21のJS: jQuery 1.9、Testing jQuery Plugins、JavaScript testing boilerplate - JSer.info</a></li>\n</ul>\n"
+        },
+        {
+            "title": "JSer.info 3周年",
+            "beginDate": "2014-01-16",
+            "bodyMarkdown": "3周年を迎えた。\n\n- [third anniversary - JSer.info](https://jser.info/post/73484514668/third-anniversary)",
+            "bodyHTML": "<p>3周年を迎えた。</p>\n<ul>\n<li><a href=\"https://jser.info/post/73484514668/third-anniversary\">third anniversary - JSer.info</a></li>\n</ul>\n"
+        },
+        {
+            "title": "GitHub Pagesに移行",
+            "beginDate": "2014-08-03",
+            "bodyMarkdown": "TumblrからGitHub Pagesに移行した。\n\n詳細は[JSer.infoをTumblrからGitHub Pagesに移行しました - JSer.info](https://jser.info/2014/08/03/renewal/)を参照。",
+            "bodyHTML": "<p>TumblrからGitHub Pagesに移行した。</p>\n<p>詳細は<a href=\"https://jser.info/2014/08/03/renewal/\">JSer.infoをTumblrからGitHub Pagesに移行しました - JSer.info</a>を参照。</p>\n"
+        },
+        {
+            "title": "JSer.info 200回",
+            "beginDate": "2014-11-02",
+            "bodyMarkdown": "投稿記事が200コになることを記念して、初めて主催となるイベントを開催した。\n\n詳細は[JSer.info 200回記念イベントを開催しました - JSer.info](https://jser.info/2014/11/02/jser200/)を参照。",
+            "bodyHTML": "<p>投稿記事が200コになることを記念して、初めて主催となるイベントを開催した。</p>\n<p>詳細は<a href=\"https://jser.info/2014/11/02/jser200/\">JSer.info 200回記念イベントを開催しました - JSer.info</a>を参照。</p>\n"
+        },
+        {
+            "title": "JSer.info 4周年",
+            "beginDate": "2015-01-16",
+            "bodyMarkdown": "4周年を迎えた。\n\n詳細は[JSer.info 4周年 - JSer.info](https://jser.info/2015/01/16/4-years/)を参照。",
+            "bodyHTML": "<p>4周年を迎えた。</p>\n<p>詳細は<a href=\"https://jser.info/2015/01/16/4-years/\">JSer.info 4周年 - JSer.info</a>を参照。</p>\n"
+        },
+        {
+            "title": "JSer.infoの韓国語訳",
+            "beginDate": "2015-06-10",
+            "bodyMarkdown": "同サイト内で韓国語訳を開始した。\n\n- <https://jser.info/ko/>\n\n韓国語訳は[U-Yeong Ju](https://github.com/UYEONG)さんがメインでしている。\n\n- [2015-06-10のJS: ブラウザとES6の状況、Web Audio APIチュートリアル - JSer.info](https://jser.info/2015/06/10/es6-status-webaudio/)",
+            "bodyHTML": "<p>同サイト内で韓国語訳を開始した。</p>\n<ul>\n<li><a href=\"https://jser.info/ko/\">https://jser.info/ko/</a></li>\n</ul>\n<p>韓国語訳は<a href=\"https://github.com/UYEONG\">U-Yeong Ju</a>さんがメインでしている。</p>\n<ul>\n<li><a href=\"https://jser.info/2015/06/10/es6-status-webaudio/\">2015-06-10のJS: ブラウザとES6の状況、Web Audio APIチュートリアル - JSer.info</a></li>\n</ul>\n"
+        },
+        {
+            "title": "JSer.info 5周年",
+            "beginDate": "2016-01-16",
+            "bodyMarkdown": "5周年となり記念イベントを開催した。\nイベントではJavaScript Discussionのコーナーを行うようになった。\n\n[ECMAScript Daily](https://ecmascript-daily.github.io/)というECMAScriptに関する情報のみを扱うサイトを作成した。\n\n詳細は[JSer.info 5周年記念イベントを開催しました - JSer.info](https://jser.info/2016/01/16/jser-5years/)を参照。",
+            "bodyHTML": "<p>5周年となり記念イベントを開催した。\nイベントではJavaScript Discussionのコーナーを行うようになった。</p>\n<p><a href=\"https://ecmascript-daily.github.io/\">ECMAScript Daily</a>というECMAScriptに関する情報のみを扱うサイトを作成した。</p>\n<p>詳細は<a href=\"https://jser.info/2016/01/16/jser-5years/\">JSer.info 5周年記念イベントを開催しました - JSer.info</a>を参照。</p>\n"
+        },
+        {
+            "title": "JSer.info 300回",
+            "beginDate": "2016-10-10",
+            "bodyMarkdown": "300回目の投稿。サイトがフルHTTPSへ移行した。\nまた[Ping! to JSer.info](https://jser.info/ping/ \"Ping! to JSer.info\")で掲載して欲しいURLを通知できるようになった。\n\n詳細は[JSer.info 300回目 && https化 && ユーザー投稿機能 - JSer.info](https://jser.info/2016/10/10/300posts/)を参照。",
+            "bodyHTML": "<p>300回目の投稿。サイトがフルHTTPSへ移行した。\nまた<a href=\"https://jser.info/ping/\" title=\"Ping! to JSer.info\">Ping! to JSer.info</a>で掲載して欲しいURLを通知できるようになった。</p>\n<p>詳細は<a href=\"https://jser.info/2016/10/10/300posts/\">JSer.info 300回目 &#x26;&#x26; https化 &#x26;&#x26; ユーザー投稿機能 - JSer.info</a>を参照。</p>\n"
+        },
+        {
+            "title": "JSer.info 6周年",
+            "beginDate": "2017-01-16",
+            "bodyMarkdown": "6周年を迎えた。\n\n前日の2017-01-15に6周年記念イベントを開催した。\nイベントではDropbox Paperを使ったリアルタイム書き起こしを取り入れた。\n\n詳細は[JSer.info 6周年記念イベントを開催しました - JSer.info](https://jser.info/2017/01/15/jser-info-6years/)を参照。",
+            "bodyHTML": "<p>6周年を迎えた。</p>\n<p>前日の2017-01-15に6周年記念イベントを開催した。\nイベントではDropbox Paperを使ったリアルタイム書き起こしを取り入れた。</p>\n<p>詳細は<a href=\"https://jser.info/2017/01/15/jser-info-6years/\">JSer.info 6周年記念イベントを開催しました - JSer.info</a>を参照。</p>\n"
+        },
+        {
+            "title": "JSer.info 7周年",
+            "beginDate": "2018-01-16",
+            "bodyMarkdown": "7周年を迎えた。365回目の投稿。\n\nあらためてJSer.infoのワークフローについてをまとめた\n\n詳細は[JSer.infoを開始してから7年が経ちました - JSer.info](https://jser.info/2018/01/15/jser-info-7years/)を参照。",
+            "bodyHTML": "<p>7周年を迎えた。365回目の投稿。</p>\n<p>あらためてJSer.infoのワークフローについてをまとめた</p>\n<p>詳細は<a href=\"https://jser.info/2018/01/15/jser-info-7years/\">JSer.infoを開始してから7年が経ちました - JSer.info</a>を参照。</p>\n"
+        },
+        {
+            "title": "JSer.info 400回",
+            "beginDate": "2018-09-22",
+            "bodyMarkdown": "400回目の投稿。\n\n400回記念イベントを開催した。\n\n詳細は[JSer.info 400回記念イベントを開催しました - JSer.info](https://jser.info/2018/09/22/jser-info-400/)を参照。",
+            "bodyHTML": "<p>400回目の投稿。</p>\n<p>400回記念イベントを開催した。</p>\n<p>詳細は<a href=\"https://jser.info/2018/09/22/jser-info-400/\">JSer.info 400回記念イベントを開催しました - JSer.info</a>を参照。</p>\n"
+        },
+        {
+            "title": "JSer.info 8周年",
+            "beginDate": "2019-01-16",
+            "bodyMarkdown": "8周年を迎えた。\n\n[twitter]: twitter.png\t\"Twitter\"",
+            "bodyHTML": "<p>8周年を迎えた。</p>\n"
+        }
+    ]
+}

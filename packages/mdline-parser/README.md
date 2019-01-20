@@ -8,10 +8,6 @@ Install with [npm](https://www.npmjs.com/):
 
     npm install @mdline/mdline-parser
 
-## Usage
-
-- [ ] Write usage instructions
-
 ## Changelog
 
 See [Releases page](https://github.com/azu/mdline/releases).

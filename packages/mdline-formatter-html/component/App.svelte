@@ -1,7 +1,3 @@
-<svelte:head>
-    <title>Title</title>
-</svelte:head>
-
 <section class="cd-timeline js-cd-timeline">
     <div class="cd-timeline__container">
         {#each items as item}
@@ -11,19 +7,18 @@
             <div class="cd-timeline__content js-cd-content">
                 <h2>{item.title}</h2>
                 {@html item.bodyHTML}
-                <span class="cd-timeline__date">{item.startDate}</span>
+                {#if endDate }
+                    <span class="cd-timeline__date">{item.beginDate} - item.endDate</span>
+                {:else}
+                    <span class="cd-timeline__date">{item.beginDate}</span>
+                {/if}
             </div>
         </div>
         {/each}
     </div>
-</section> <!-- cd-timeline -->
+</section>
 <style>
-    /* --------------------------------
-
-    Primary style
-
-    -------------------------------- */
-
+    /* Based on https://github.com/CodyHouse/vertical-timeline */
     .cd-timeline *, .cd-timeline *::after, .cd-timeline *::before {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
@@ -50,18 +45,6 @@
         font-family: "Open Sans", sans-serif;
         font-weight: bold;
     }
-
-    /* --------------------------------
-
-    Patterns - reusable parts of our design
-
-    -------------------------------- */
-    @media only screen and (min-width: 1170px) {
-        .cd-is-hidden {
-            visibility: hidden;
-        }
-    }
-
 
     .cd-timeline {
         overflow: hidden;
@@ -136,17 +119,6 @@
         box-shadow: 0 0 0 4px white, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
     }
 
-    .cd-timeline__img img {
-        display: block;
-        width: 24px;
-        height: 24px;
-        position: relative;
-        left: 50%;
-        top: 50%;
-        margin-left: -12px;
-        margin-top: -12px;
-    }
-
     .cd-timeline__img {
         background: #75ce66;
     }
@@ -160,12 +132,6 @@
             /* Force Hardware Acceleration */
             -webkit-transform: translateZ(0);
             transform: translateZ(0);
-        }
-
-        .cd-timeline__img.cd-timeline__img--bounce-in {
-            visibility: visible;
-            -webkit-animation: cd-bounce-1 0.6s;
-            animation: cd-bounce-1 0.6s;
         }
     }
 
@@ -236,32 +202,18 @@
         color: #303e49;
     }
 
-    .cd-timeline__content p,
-    .cd-timeline__read-more,
+    .cd-timeline__content :global(p),
     .cd-timeline__date {
         font-size: 1.3rem;
     }
 
-    .cd-timeline__content p {
+    .cd-timeline__content :global(p) {
         margin: 1em 0;
         line-height: 1.6;
     }
 
-    .cd-timeline__read-more,
     .cd-timeline__date {
         display: inline-block;
-    }
-
-    .cd-timeline__read-more {
-        float: right;
-        padding: .8em 1em;
-        background: #acb7c0;
-        color: white;
-        border-radius: 0.25em;
-    }
-
-    .cd-timeline__read-more:hover {
-        background-color: #bac4cb;
     }
 
     .cd-timeline__date {
@@ -275,11 +227,10 @@
             font-size: 2rem;
         }
 
-        .cd-timeline__content p {
+        .cd-timeline__content :global(p) {
             font-size: 1.6rem;
         }
 
-        .cd-timeline__read-more,
         .cd-timeline__date {
             font-size: 1.4rem;
         }
@@ -302,10 +253,6 @@
             border-left-color: white;
         }
 
-        .cd-timeline__read-more {
-            float: left;
-        }
-
         .cd-timeline__date {
             position: absolute;
             width: 100%;
@@ -326,28 +273,10 @@
             border-right-color: white;
         }
 
-        .cd-timeline__block:nth-child(even) .cd-timeline__read-more {
-            float: right;
-        }
-
         .cd-timeline__block:nth-child(even) .cd-timeline__date {
             left: auto;
             right: 122%;
             text-align: right;
-        }
-
-        .cd-timeline__content.cd-timeline__content--bounce-in {
-            visibility: visible;
-            -webkit-animation: cd-bounce-2 0.6s;
-            animation: cd-bounce-2 0.6s;
-        }
-    }
-
-    @media only screen and (min-width: 1170px) {
-        /* inverse bounce effect on even content blocks */
-        .cd-timeline__block:nth-child(even) .cd-timeline__content.cd-timeline__content--bounce-in {
-            -webkit-animation: cd-bounce-2-inverse 0.6s;
-            animation: cd-bounce-2-inverse 0.6s;
         }
     }
 

@@ -1,4 +1,4 @@
-import { MdlineFormat } from "@mdline/types";
+import { MdlineFormat, MdlineList } from "@mdline/types";
 
 const unified = require("unified");
 const remarkParse = require("remark-parse");
@@ -11,26 +11,43 @@ const remark = unified()
     .use(html);
 
 
-export function parseHeading(text: string): { title: string, startDate: string } {
-    if (/^\d{4}-\d{2}-\d{2}:/.test(text)) {
-        const matches = text.match(/(^\d{4}-\d{2}-\d{2}):(.*)/);
+export function parseHeading(text: string): { title: string, beginDate: string; endDate?: string } | null {
+    // https://en.wikipedia.org/wiki/ISO_8601
+    // https://stackoverflow.com/questions/20413843/is-there-any-kind-of-standard-for-representing-date-ranges
+    const singleDatePattern = /(^[\d-]{4,}):(.*)/;
+    const dateRangePattern = /(^[\d-]{4,})--([\d-]{4,}):(.*)/;
+    if (dateRangePattern.test(text)) {
+        const matches = text.match(dateRangePattern);
         if (matches === null) {
-            throw new Error("Invalid matching: /(^\\d{4}-\\d{2}-\\d{2}):(.*)/");
+            throw new Error("Invalid matching: date range");
         }
         return {
-            startDate: matches[1],
+            beginDate: matches[1],
+            endDate: matches[2],
+            title: matches[3].trim()
+        };
+    } else if (singleDatePattern.test(text)) {
+        const matches = text.match(singleDatePattern);
+        if (matches === null) {
+            throw new Error("Invalid matching: date");
+        }
+        return {
+            beginDate: matches[1],
             title: matches[2].trim()
         };
-    }
-    throw new Error("Not matching heading: /(^\\d{4}-\\d{2}-\\d{2}):(.*)/");
+    } else return null;
 }
 
 
 export function parse(text: string): MdlineFormat {
     const ast = remark.parse(text);
     const sections = createSections(ast);
-    const items = sections.slice(1).map((section: any) => {
+    const headerList = sections.slice(1);
+    const items: MdlineList = headerList.map((section: any) => {
         const heading = parseHeading(toString(section.children[0]));
+        if (heading === null) {
+            return null;
+        }
         const bodyNodeList = section.children.slice(1);
         const bodyRoot = {
             type: "root",
@@ -41,11 +58,12 @@ export function parse(text: string): MdlineFormat {
         const body = text.slice(bodyStartOffset, bodyEndOffset);
         return {
             title: heading.title,
-            startDate: heading.startDate,
+            beginDate: heading.beginDate,
+            endDate: heading.endDate,
             bodyMarkdown: body,
             bodyHTML: remark.stringify(bodyRoot)
         };
-    });
+    }).filter((item: any) => item !== null);
     return {
         items
     };

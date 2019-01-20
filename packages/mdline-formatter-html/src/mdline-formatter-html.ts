@@ -20,6 +20,5 @@ export const format = async (mdlineData: MdlineFormat): Promise<string> => {
     </style>
 </head>
 <body>${html}</body>
-</body>
 </html>`;
 };
