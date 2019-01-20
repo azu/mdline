@@ -1,6 +1,6 @@
 {
   "name": "@mdline/mdline-parser",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A parser for mdline.",
   "keywords": [
     "ast",
@@ -43,7 +43,7 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "@mdline/types": "^1.0.1",
+    "@mdline/types": "^1.0.2",
     "mdast-util-to-string": "^1.0.5",
     "remark-html": "^9.0.0",
     "remark-parse": "^6.0.3",

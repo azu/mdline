@@ -1,6 +1,6 @@
 {
   "name": "@mdline/mdline-formatter-html",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "HTML formatter for mdline",
   "keywords": [
     "mdline"
@@ -40,7 +40,7 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "@mdline/types": "^1.0.1",
+    "@mdline/types": "^1.0.2",
     "svelte": "^2.16.0"
   },
   "devDependencies": {

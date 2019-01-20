@@ -1,6 +1,6 @@
 {
   "name": "mdline",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "markdown to timeline tool.",
   "keywords": [
     "cli",
@@ -47,8 +47,8 @@
   "dependencies": {
     "@babel/generator": "^7.2.2",
     "@babel/parser": "^7.2.3",
-    "@mdline/mdline-formatter-html": "^1.0.1",
-    "@mdline/mdline-parser": "^1.0.1",
+    "@mdline/mdline-formatter-html": "^1.0.2",
+    "@mdline/mdline-parser": "^1.0.2",
     "meow": "^5.0.0"
   },
   "devDependencies": {
