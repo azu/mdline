@@ -1,4 +1,4 @@
-# mdline [![Build Status](https://travis-ci.org/textlint/textlint.svg?branch=master)](https://travis-ci.org/textlint/textlint)
+# mdline [![Build Status](https://travis-ci.org/azu/mdline.svg?branch=master)](https://travis-ci.org/azu/mdline)
 
 Markdown timeline format and toolkit.
 
