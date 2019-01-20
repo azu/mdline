@@ -2,7 +2,7 @@
 
 Markdown timeline format and toolkit.
 
-For example, mdline convert [a markdown file](packages/mdline-parser/test/snapshots/ecmascript/input.md) to following HTML file.
+For example, mdline convert [a markdown file](packages/mdline-parser/test/snapshots/ecmascript/input.md) to following [HTML file](https://mdline.netlify.com/).
 
 [![ecmascript-timeline.png](./docs/resources/ecmascript-timeline.png)](https://mdline.netlify.com/)
 
