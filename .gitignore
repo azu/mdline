@@ -82,3 +82,4 @@ crashlytics.properties
 crashlytics-build.properties
 
 lib/
+/public/index.html

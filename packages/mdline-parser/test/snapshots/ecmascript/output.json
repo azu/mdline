@@ -57,7 +57,7 @@
         },
         {
             "title": "ECMAScript 2018",
-            "beginDate": "2015-06",
+            "beginDate": "2018-06",
             "bodyMarkdown": "ECMAScript 2018 (ES2018), the ninth edition, includes features for asynchronous iteration and generators, new regular expression features and rest/spread parameters.",
             "bodyHTML": "<p>ECMAScript 2018 (ES2018), the ninth edition, includes features for asynchronous iteration and generators, new regular expression features and rest/spread parameters.</p>\n"
         }

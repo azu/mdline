@@ -36,12 +36,14 @@
     "bootstrap": "lerna bootstrap",
     "build": "lerna run build",
     "test": "lerna run test",
+    "updateSnapshot": "lerna run updateSnapshot",
     "versionup": "lerna version --conventional-commits",
     "versionup:patch": "lerna version patch --conventional-commits",
     "versionup:minor": "lerna version minor --conventional-commits",
     "versionup:major": "lerna version minor --conventional-commits",
     "realse": "lerna publish from-package",
-    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\""
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
+    "netlify": "node public/update-index.js"
   },
   "devDependencies": {
     "husky": "^1.3.1",

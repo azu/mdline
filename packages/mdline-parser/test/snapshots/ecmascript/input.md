@@ -36,6 +36,6 @@ the seventh edition, intended to continue the themes of language reform, code is
 
 the eighth edition, includes features for concurrency and atomics, syntactic integration with promises (async/await).
 
-## 2015-06: ECMAScript 2018
+## 2018-06: ECMAScript 2018
 
 ECMAScript 2018 (ES2018), the ninth edition, includes features for asynchronous iteration and generators, new regular expression features and rest/spread parameters.

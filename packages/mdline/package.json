@@ -23,6 +23,9 @@
   ],
   "main": "lib/mdline.js",
   "types": "lib/mdline.d.ts",
+  "bin": {
+    "mdline": "bin/cmd.js"
+  },
   "directories": {
     "lib": "lib",
     "test": "test"
@@ -33,6 +36,7 @@
     "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,css}\"",
     "prepublish": "npm run --if-present build",
     "test": "mocha \"test/**/*.ts\"",
+    "updateSnapshot": "cross-env UPDATE_SNAPSHOT=1 npm test",
     "watch": "tsc -p . --watch"
   },
   "prettier": {
