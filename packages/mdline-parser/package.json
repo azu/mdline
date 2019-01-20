@@ -1,6 +1,6 @@
 {
   "name": "@mdline/mdline-parser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A parser for mdline.",
   "keywords": [
     "ast",
@@ -43,14 +43,14 @@
     "tabWidth": 4
   },
   "dependencies": {
-    "unified": "^7.1.0",
-    "remark-parse": "^6.0.3",
+    "@mdline/types": "^1.0.1",
+    "mdast-util-to-string": "^1.0.5",
     "remark-html": "^9.0.0",
+    "remark-parse": "^6.0.3",
     "remark-stringify": "^6.0.4",
     "select-section": "^0.4.6",
-    "mdast-util-to-string": "^1.0.5",
-    "unist-util-select": "^1.0.0",
-    "@mdline/types": "^1.0.0"
+    "unified": "^7.1.0",
+    "unist-util-select": "^1.0.0"
   },
   "devDependencies": {
     "@types/mocha": "^5.2.5",
