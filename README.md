@@ -86,6 +86,13 @@ See [Releases page](https://github.com/azu/mdline/releases).
     # = npm publish
     yarn run release
 
+## Docker
+
+You have a basic Docker integration in the `docker` directory with an example file.
+
+- Build the image with `docker/build.sh`. A docker image named `mdline` will be created.
+- Test the conversion with `docker/test.sh`. It will convert the `docker/example.md` file to HTML format.
+
 ## Contributing
 
 Pull requests and stars are always welcome.
