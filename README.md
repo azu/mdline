@@ -50,7 +50,7 @@ You can also live demo on <https://mdline.netlify.com/>.
 
 Install with [npm](https://www.npmjs.com/):
 
-    npm install mdline -g
+    npm install --global mdline
 
 Convert mdline format text to html.
 
